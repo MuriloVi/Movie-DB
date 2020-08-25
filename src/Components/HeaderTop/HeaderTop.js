@@ -7,11 +7,11 @@ function HeaderTop() {
     return (
         <header className="header-box">
             <Link to="/">
-            <div>
-                <h1>
-                    Movies
-                </h1>
-            </div>
+                <div>
+                    <h1>
+                        Movies
+                    </h1>
+                </div>
             </Link>
         </header>
     )

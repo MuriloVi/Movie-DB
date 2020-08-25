@@ -5,16 +5,16 @@ import './Homepage.css';
 import HeaderTop from '../../Components/HeaderTop/HeaderTop'
 import Card from '../../Components/Card/Card';
 import Pagebar from '../../Components/Pagebar/Pagebar';
+import DefaultHome from '../../Components/DefaultHome/DefaultHome';
 
 //code use
 import { useState } from 'react';
 import api from '../../Services/api';
 
 //helpers
-import {HandleDate} from '../../Helpers/HandleDate'
-import {HandleDescription} from '../../Helpers/HandleDescription'
+import { HandleDate } from '../../Helpers/HandleDate'
+import { HandleDescription } from '../../Helpers/HandleDescription'
 import { HandleRate } from '../../Helpers/HandleRate';
-import DefaultHome from '../../Components/DefaultHome/DefaultHome';
 
 
 function Homepage() {
@@ -55,7 +55,7 @@ function Homepage() {
             </div>
             <main className="film-board-box">
                 <div className="film-board">
-                    {movies.length === 0 ? <DefaultHome/> : (
+                    {movies.length === 0 ? <DefaultHome /> : (
                         loading ? <div style={{ textAlign: 'center', fontFamily: 'Lato', color: '#2c62b8' }}><h2>Carregando...</h2></div> : (
                             movies.map((film, i) => {
                                 return (

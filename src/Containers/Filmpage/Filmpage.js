@@ -94,12 +94,12 @@ function Filmpage() {
                         </div>
                     </div>
                     <div className="video">
-                    {video ? (
-                             <iframe width="100%" height="500px" title={video}
-                             src={`https://www.youtube.com/embed/${video.key}`}>
-                         </iframe>
-                        ) : <h2 style={{margin:'auto'}}>Desculpe, não encontramos o trailer</h2>}
-                       
+                        {video ? (
+                            <iframe width="100%" height="500px" title={video}
+                                src={`https://www.youtube.com/embed/${video.key}`}>
+                            </iframe>
+                        ) : <h2 style={{ margin: 'auto' }}>Desculpe, não encontramos o trailer</h2>}
+
                     </div>
                 </main>
             )}

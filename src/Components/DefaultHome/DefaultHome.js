@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './DefaultHome.css';
-import { useEffect } from 'react'
+
+//code use
 import Axios from 'axios';
 
-//Components 
+//components 
 import Card from '../Card/Card'
 
 //helpers

@@ -7,18 +7,12 @@ import { HandleGenre } from '../../Helpers/HandleGenre';
 
 
 function Card(props) {
-   /* 
-
-    }*/
-
-
     return (
         <div>
             <Link to={{
                 pathname: `film/${props.id}`,
                 state: { id: props.id }
             }}
-
             >
                 <div className="card-box">
                     <div className="card-poster">
@@ -42,15 +36,13 @@ function Card(props) {
                             <p>{props.description}</p>
                         </div>
                         <div className="film-genre-data">
-                          {props.genre.map((genre,i)=>{
-                              return <p className="genres" key={i}>{HandleGenre(genre)}</p>
-                           })} 
+                            {props.genre.map((genre, i) => {
+                                return <p className="genres" key={i}>{HandleGenre(genre)}</p>
+                            })}
                         </div>
-
                     </div>
                 </div>
             </Link>
-
         </div>
     )
 }
