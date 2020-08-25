@@ -1,0 +1,16 @@
+.homepage-genres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Abel;
+    margin-top:2%;
+}
+.genre{
+    cursor: pointer;
+    transition : background .4s, color .4s, border .4s;
+}
+.genre:hover{
+    background:#2c62b8;
+    color:#37d9ed;
+    border: 1px solid #37d9ed;
+}

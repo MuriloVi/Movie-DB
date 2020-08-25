@@ -1,68 +1,80 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movie Database
 
-## Available Scripts
+Este é o projeto concluído fruto da realização do desafio proposto pela Cubos, em concorrência à vaga de Estágio.
+Projeto realizado utilizando React JS, e suas features mais modernas.
 
-In the project directory, you can run:
+#### 1.0 .... Inicializar Projeto
+#### 2.0 .... Estrutura do Projeto
 
-### `yarn start`
+## Inicializar Projeto
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para inicialização do projeto é necessário obter este repositório através de um download via github, ou simplesmante executando um git clone no terminal do seu sistema operacional<br/>
+<strong> !Atenção! </strong>, é necessário ter o Node instalado em sua máquina para fazê-lo funcionar.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### scripts
 
-### `yarn test`
+Antes de mais nada é necessário rodar o install, pois o repositório do github não inclui os node_modules. Logo:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install 
 
-### `yarn build`
+ou
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+yarn install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Eu utilizo o Yarn, mas utlize o gerenciador de pacotes de sua preferência.<br/>
+Após a adição do node_modules, basta rodar o script de start:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `yarn eject`
+ou 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+yarn start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Vizualizando o resultado
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+No seu navegador, acesse [http://localhost:3000](http://localhost:3000).<br/>
+Pronto, fique à vontade para buscar qualquer filme e obter suas informações :)
+<br/>
+<br/>
+<hr/>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Estrutura do Projeto
+<br/>
+<br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Components 
 
-### Code Splitting
+Pasta com os componentes utilizados no web app.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Card - Um Card que recebe as informações via props de cada filme da busca .
+### HeaderTop - O Header do web app, disponível na Homepage e na Filmpage
+### Pagebar - Uma barra posicionada ao fim da página que permite a navegação entre as páginas dos resultados da busca
+### DefaultHome - Componente que aparece na Homepage caso não haja a realização de buscas. Ele mostra os filmes mais populares atualmente.
+<br/>
+<br/>
 
-### Analyzing the Bundle Size
+### Containers
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Pasta com as pages utilizadas no web app.
 
-### Making a Progressive Web App
+### Homepage - Esta é a página inicial, aqui você terá acesso à todas as buscas que fizer utilizando a barra de pesquisa, retornando os componentes Cards via método map.
+### Filmpage -  Já esta página é a que exibe dados mais específicos sobre cada filme pesquisado. Ela recebe e exibe as informações dos filmes individualmente.
+<br/>
+<br/>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Helpers
 
-### Advanced Configuration
+Pasta com funções que auxiliam no tratamento de alguns dados recebidos da API, para sua correta exibição no front.
+<br/>
+<br/>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Services 
 
-### Deployment
+Pasta com a configuração padrão do axios para a realização das buscas(querys).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Fim
+Essas são as instruções e os detalhes do projeto<br/>
+Espero poder integrar a equipe da Cubos
+## Obrigado 

@@ -1,0 +1,19 @@
+.header-box{
+    width:100%;
+    font-family: Abel;
+    background: #2c62b8;
+    color: #37d9ed;
+    top:0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-box h1{
+    margin:0;
+    font-size: 40px;
+}
+.header-box a{
+    text-decoration: none;
+    color: #37d9ed;
+}
