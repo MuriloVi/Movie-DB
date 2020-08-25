@@ -32,7 +32,6 @@ function Homepage() {
             setMovies([...film.results])
             setPage(pages)
             setLoading(false)
-            console.log(film)
         })
     }
     function HandleForm(e) {
@@ -41,8 +40,7 @@ function Homepage() {
             const film = response.data
             setMovies([...film.results])
             setTotalMovies(film.total_results)
-            setLoading(false)
-            console.log(response)
+            setLoading(false)            
         })
     }
     return (

@@ -25,13 +25,11 @@ function Filmpage() {
 
         Axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=6449bb19e8dc187f32dd62aa49300097&language=pt-BR`).then(response => {
             const filme = response.data
-            console.log(filme)
             setFilm(filme)
             setLoading(false)
         })
         Axios.get(`https://api.themoviedb.org/3/movie/${id}%7Bmovie_id%7D/videos?api_key=6449bb19e8dc187f32dd62aa49300097&language=pt-BR`).then(response => {
             const videox = response.data
-            console.log(videox.results[0])
             setVideo(videox.results[0])
         })
     }, [id])
